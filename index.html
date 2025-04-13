@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <meta name="description" content="Um quiz interativo para testar seus conhecimentos"> <!-- metadados-->
+</head>
+
+    
+<body>
+<header>
+ <h1> <strong> Quiz Interativo </strong> Para Programadores </h1>  
+ <p> Teste seus <em>conhecimentos</em> </p> <!-- italico -->
+
+ <!-- strong - b 
+  em - i 
+  br - quebra linha -->
+
+</header>
+
+<main>
+    <!-- dividir o conteudo em seções-->
+     <section>   
+    <h2> Sobre o quiz </h2>
+    <p> Desafie-se com este quiz </p>
+    <p> <abbr title="Hypertext Markup Language"> HTML </abbr> </p> <!-- aparecer mensagem quando passa o mouse-->
+    <p> <abbr title="Cascate"> CSS </abbr> </p>
+     </section>
+
+     <section>
+        
+    <h2> Question 1: Qual linguagem é usada para estruturar paginas web </h2>
+
+     <form> 
+      <input type="radio" value="Python" id="p1a" name="pergunta1">
+      <label for="p1a"> Python </label>
+     <br> 
+      <input type="radio" value="HTML" id="p1b" name="pergunta1">    <!-- name igual - mesmo grupo - pode escolher apenas uma.-->
+      <label for="p1b"> HTML </label>
+     </form>
+    </section>
+
+    <section> 
+        <h2> Question 2: Na URL, o trecho "google.com" é o ____</h2>
+        <form>
+            <input type="text" id="p2" name="pergunta2"
+            placeholder="Digite">
+        </form>
+    </section>
+
+    <section> 
+        <h2> Question 3: Escreva uma senha forte </h2>
+        <form>
+        <input type="password" id="senha" name="senha" placeholder="Digite a senha">
+
+    </form>
+    </section>
+
+
+<section> 
+        <h2> Question 3: Selecione a data de nascimento  </h2>
+        <form>
+<input type="date" id="dat" name="data">
+
+        </form>
+    </section>
+
+
+    <section> 
+        <h2> Quais dessas são linguagens de programção</h2>
+<form> 
+<input type="checkbox" id="p5s" name="p5" value="HTML" label for="p5s"> HTML </label>
+<input type="checkbox" id="p5s" name="p5" value="SQL" label for="p5s"> SQL </label>
+<input type="checkbox" id="p5s" name="p5" value="Javascript" label for="p5s"> Javascript </label>
+<input type="checkbox" id="p5s" name="p5" value="Java" label for="p5s"> Java </label>
+</form>
+    </section>
+
+    <section> 
+        <h2> Faça o upload de um arquivo contendo codigo HTML</h2>
+        <form> 
+         <input type="file" id="p6" name="p6">
+        </form>
+        </section>
+
+
+        <section> 
+ <h2> Question 7: Selecione o atributo do input que define o seu tipo: </h2>
+         <form> 
+  <select name="pergunta7" id="p7">
+  <option value="id"> id</option>
+  <option value="type"> type </option>
+<option value="placeholder"> placeholder </option>
+  </select>
+         </form>   
+        </section>
+ <!-- input-->       
+<section> 
+            <h2> Qual linguagem é representada pela imagem abaixo: </h2>
+    <figure> <img src="./assets/html.png" width="100px" alt="logotipo de uma linguagem"> 
+    <figcaption>Figura1: Logotipo de uma linguagem de programação </figcaption>
+    </figure>
+    <form>
+<input type="text" id="p8" name="p8" placeholder="Digite">
+    </form>
+</section>
+
+<!-- Criando tabela -->
+ <section> 
+<h2> Tabela</h2>
+<table border="1">
+ <thead>
+<th> Pontuação</th>
+<th> Avaliação</th>
+    </thead>
+<tr> 
+    <td> 0-2 </td>
+    <td> Não desista! </td>
+</tr>
+<tr> 
+    <td> 3-4 </td>
+    <td> Melhore! </td>
+</tr>
+<tr> 
+    <td> 5-6 </td>
+    <td> Bom! </td>
+</tr>
+<tr> 
+    <td colspan="2"> Boa sorte </td>
+</tr>
+</table>
+</section>
+
+<section>
+    <h2> Verifique suas respostas </h2>
+    <details>
+    <ol><!-- declarando lista-->
+    <li> HTML</li>
+    <li> Dominio </li>
+    <li> Javacsript, Java</li>
+    <li> Arq deve ser .html</li>
+    <li> type </li>
+    </ol>
+</details>
+</section>
+
+<section>
+
+<Form> 
+    <h2> De o seu feedback</h2>
+    <fieldset> Informações </fieldset>
+    <br> 
+    <label for="name"> Nome: </label>
+    <input type="text" id="name" name="nome">
+    <br>
+    <br>
+    <label for="comentarios"> Comentarios </label> 
+<textarea name="comentarios " id="comentarios"></textarea>
+
+ 
+</form>
+</section>
+
+</main>
+
+<footer>
+<p> Todos os direitos reservados</p>
+<p> Para conhecer outros quizzes <a href="https://google.com" target="blank"> Clique aqui</a> </p>
+</footer>
+</body>
+</html>
