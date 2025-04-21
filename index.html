@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <meta name="description" content="Um quiz interativo para testar seus conhecimentos"> <!-- metadados-->
+    <link rel="stylesheet" href="style.css"> <!-- conexao com css-->
 </head>
 
     
 <body>
 <header>
- <h1> <strong> Quiz Interativo </strong> Para Programadores </h1>  
- <p> Teste seus <em>conhecimentos</em> </p> <!-- italico -->
-
+ <!-- usando css no proprio html
+<h1 style="color:black; font-size:50px;"> <strong> Quiz Interativo </strong> Para Programadores </h1> -->  
+ <h1> <strong> Quiz Interativo </strong> Para Programadores </h1>
+ <p> Teste seus <em>conhecimentos</em> </p> 
  <!-- strong - b 
   em - i 
   br - quebra linha -->
@@ -23,26 +25,27 @@
     <!-- dividir o conteudo em seções-->
      <section>   
     <h2> Sobre o quiz </h2>
-    <p> Desafie-se com este quiz </p>
-    <p> <abbr title="Hypertext Markup Language"> HTML </abbr> </p> <!-- aparecer mensagem quando passa o mouse-->
-    <p> <abbr title="Cascate"> CSS </abbr> </p>
+    <p> Desafie-se com este quiz.</p>
      </section>
 
      <section>
         
-    <h2> Question 1: Qual linguagem é usada para estruturar paginas web </h2>
+    <h2>1: Qual linguagem é usada para estruturar paginas web </h2>
 
      <form> 
-      <input type="radio" value="Python" id="p1a" name="pergunta1">
+      <input type="radio" value="Python" id="p1a" name="p1">
       <label for="p1a"> Python </label>
      <br> 
-      <input type="radio" value="HTML" id="p1b" name="pergunta1">    <!-- name igual - mesmo grupo - pode escolher apenas uma.-->
+      <input type="radio" value="HTML" id="p1b" name="p1">    <!-- name igual - mesmo grupo - pode escolher apenas uma.-->
       <label for="p1b"> HTML </label>
+        <br> 
+        <input type="radio" value="Java" id="p1c" name ="p1">
+        <label for ="p1c"> Java </label
      </form>
     </section>
 
     <section> 
-        <h2> Question 2: Na URL, o trecho "google.com" é o ____</h2>
+        <h2>2: Na URL, o trecho "google.com" é o _______</h2>
         <form>
             <input type="text" id="p2" name="pergunta2"
             placeholder="Digite">
@@ -50,7 +53,7 @@
     </section>
 
     <section> 
-        <h2> Question 3: Escreva uma senha forte </h2>
+        <h2>3: Escreva uma senha forte </h2>
         <form>
         <input type="password" id="senha" name="senha" placeholder="Digite a senha">
 
@@ -59,7 +62,7 @@
 
 
 <section> 
-        <h2> Question 3: Selecione a data de nascimento  </h2>
+        <h2> 4: Em que ano foi lançada a ultima versão do HTML (5)</h2>
         <form>
 <input type="date" id="dat" name="data">
 
@@ -68,7 +71,7 @@
 
 
     <section> 
-        <h2> Quais dessas são linguagens de programção</h2>
+        <h2> 5: Quais dessas são linguagens de programação</h2>
 <form> 
 <input type="checkbox" id="p5s" name="p5" value="HTML" label for="p5s"> HTML </label>
 <input type="checkbox" id="p5s" name="p5" value="SQL" label for="p5s"> SQL </label>
@@ -78,7 +81,7 @@
     </section>
 
     <section> 
-        <h2> Faça o upload de um arquivo contendo codigo HTML</h2>
+        <h2> Faça o upload de um arquivo contendo código HTML:</h2>
         <form> 
          <input type="file" id="p6" name="p6">
         </form>
@@ -86,19 +89,19 @@
 
 
         <section> 
- <h2> Question 7: Selecione o atributo do input que define o seu tipo: </h2>
+ <h2>7: Selecione o atributo do input que define o seu tipo: </h2>
          <form> 
   <select name="pergunta7" id="p7">
-  <option value="id"> id</option>
-  <option value="type"> type </option>
-<option value="placeholder"> placeholder </option>
+  <option value="id"> ID </option>
+  <option value="type"> Type </option>
+<option value="placeholder"> Placeholder </option>
   </select>
          </form>   
         </section>
  <!-- input-->       
 <section> 
-            <h2> Qual linguagem é representada pela imagem abaixo: </h2>
-    <figure> <img src="./assets/html.png" width="100px" alt="logotipo de uma linguagem"> 
+            <h2>8: Qual linguagem é representada pela imagem abaixo: </h2>
+    <figure> <img src="./assets/python.png" width="100px" alt="logotipo de uma linguagem"> 
     <figcaption>Figura1: Logotipo de uma linguagem de programação </figcaption>
     </figure>
     <form>
@@ -108,7 +111,6 @@
 
 <!-- Criando tabela -->
  <section> 
-<h2> Tabela</h2>
 <table border="1">
  <thead>
 <th> Pontuação</th>
@@ -127,7 +129,12 @@
     <td> Bom! </td>
 </tr>
 <tr> 
-    <td colspan="2"> Boa sorte </td>
+    <td> 7-8 </td>
+    <td> Perfeito! </td>
+</tr>
+
+<tr> 
+    <td colspan="2"> Boa sorte!</td> <!-- colpsan="2" mescla duas colunas-->
 </tr>
 </table>
 </section>
@@ -135,12 +142,15 @@
 <section>
     <h2> Verifique suas respostas </h2>
     <details>
+        <summary> Clique aqui</summary>
     <ol><!-- declarando lista-->
-    <li> HTML</li>
-    <li> Dominio </li>
-    <li> Javacsript, Java</li>
-    <li> Arq deve ser .html</li>
-    <li> type </li>
+    <ul> HTML</ul>
+    <ul> Dominio </ul>
+    <ul> 2014 </ul>
+    <ul> Javascript, Java</ul>
+    <ul> Arquivo deve ser .html</ul>
+    <uull>Type </ul>
+    <ul> Python </ul>
     </ol>
 </details>
 </section>
@@ -149,13 +159,17 @@
 
 <Form> 
     <h2> De o seu feedback</h2>
-    <fieldset> Informações </fieldset>
+
     <br> 
     <label for="name"> Nome: </label>
     <input type="text" id="name" name="nome">
     <br>
+    <label for="name"> E-mail: </label>
+    <input type="text" id="email" name="nome">
     <br>
-    <label for="comentarios"> Comentarios </label> 
+    <br>
+    <label for="comentarios"> Comentarios:</label> 
+    <br>
 <textarea name="comentarios " id="comentarios"></textarea>
 
  
@@ -165,8 +179,8 @@
 </main>
 
 <footer>
-<p> Todos os direitos reservados</p>
-<p> Para conhecer outros quizzes <a href="https://google.com" target="blank"> Clique aqui</a> </p>
+<p> Todos os direitos reservados.</p>
+<p> Para conhecer outros quizzes.<a href="https://google.com" target="blank"> Clique aqui</a> </p>
 </footer>
 </body>
 </html>
